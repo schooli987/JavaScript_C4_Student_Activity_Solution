@@ -1,0 +1,208 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon & Fashion UI Clones</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Amazon UI Clone -->
+    <div class="amazon-navbar">
+      <div class="amazon-nav container">
+        <div class="amazon-logo">
+          <img src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Emblem.jpg" alt="Amazon logo with smile arrow pointing from A to Z" />
+        </div>
+
+        <div class="amazon-search">
+          <input type="text" placeholder="Search Amazon">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="amazon-nav-links">
+          <div class="amazon-nav-item">
+            <div>Furniture</div>
+          </div>
+
+          <div class="amazon-nav-item">
+            <div>Electronics</div>
+          </div>
+
+          <div class="amazon-nav-item">
+            <div>Grocery</div>
+          </div>
+
+          <div class="amazon-nav-item">
+            <div>Clothing</div>
+          </div>
+
+          <div class="amazon-cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+            <span>Cart</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel   C4 -->
+
+    <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-2 rounded">❮</button>
+
+    <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-2 rounded">❯</button>
+
+    <!-- Carousel -->
+    <div class="w-full bg-gray-200 mb-6">
+      <div class="relative overflow-hidden max-w-[1400px] mx-auto aspect-video">
+
+        <div id="amazonCarousel" class="carousel-track flex transition-transform duration-700 ease-in-out">
+          <img src="https://m.media-amazon.com/images/G/01/AdProductsWebsite/images/whats-new/image_18._TTW_.jpg" class="w-full flex-shrink-0 object-cover" />
+
+          <img src="https://www.convertcart.com/blog/ecommerce-image-carousels" class="w-full flex-shrink-0 object-cover" />
+
+          <img src="https://www.vecteezy.com/free-photos/shopping-slider" class="w-full flex-shrink-0 object-cover" />
+        </div>
+
+        <!-- Navigation -->
+        <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-2 rounded">❮</button>
+
+        <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-2 rounded">❯</button>
+
+        <!-- Dots -->
+        <div class="dots absolute bottom-4 w-full text-center">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="amazon-deals container">
+      <h2 class="deal-title">Today's Deals</h2>
+      <div class="deal-products">
+        <div class="product-card">
+          <a href="product1.html">
+            <div class="product-image">
+              <img src="https://placehold.co/200x180" alt="Wireless Bluetooth headphones with black finish and folding design" />
+            </div>
+            <h3 class="product-title">Premium Wireless Headphones with Noise Cancellation</h3>
+            <div class="product-price">$129.99</div>
+            <div class="product-rating">★★★★★ (127)</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </a>
+        </div>
+
+        <div class="product-card">
+          <a href="product2.html">
+            <div class="product-image">
+              <img src="https://placehold.co/200x180" alt="Smart watch with fitness tracking and OLED display" />
+            </div>
+            <h3 class="product-title">Smart Watch with Heart Rate Monitor - Black</h3>
+            <div class="product-price">$89.99</div>
+            <div class="product-rating">★★★★☆ (86)</div>
+            <button class="add-to-cart">Add to Cart</button>
+          </a>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://placehold.co/200x180" alt="Kitchen blender with stainless steel blades" />
+          </div>
+          <h3 class="product-title">High-Speed Blender with 6 Preset Programs</h3>
+          <div class="product-price">$59.99</div>
+          <div class="product-rating">★★★☆☆ (43)</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://placehold.co/200x180" alt="Wireless phone charger with LED indicator" />
+          </div>
+          <h3 class="product-title">Fast Wireless Charger Stand - Qi Enabled</h3>
+          <div class="product-price">$29.99</div>
+          <div class="product-rating">★★★★☆ (112)</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://placehold.co/200x180" alt="Soft cotton t-shirt with simple design" />
+          </div>
+          <h3 class="product-title">Men's Classic Fit Crewneck T-Shirt (Pack of 3)</h3>
+          <div class="product-price">$24.99</div>
+          <div class="product-rating">★★★☆☆ (37)</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://placehold.co/200x180" alt="Hardcover book with colorful illustration" />
+          </div>
+          <h3 class="product-title">Bestselling Novel - The Midnight Library (Hardcover)</h3>
+          <div class="product-price">$18.95</div>
+          <div class="product-rating">★★★★★ (245)</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="fashion-footer" id="amazon">
+      <div class="footer-container container">
+        <div class="footer-column">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Bestsellers</a></li>
+            <li><a href="#">Dresses</a></li>
+            <li><a href="#">Tops</a></li>
+            <li><a href="#">Pants</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Information</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Customer Care</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Payment Methods</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
+          <form>
+            <input type="email" placeholder="Your email address" style="padding: 10px; width: 100%; margin: 10px 0; border: 1px solid #777;">
+            <button type="submit" style="padding: 10px 20px; background-color: #777; color: white; border: none; cursor: pointer;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom container">
+        <p>&copy; 2025 Schooli. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+  <div class="dots"></div>
+</body>
